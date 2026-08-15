@@ -917,3 +917,139 @@
         <div class="reviews">
 
           <blockquote>
+            “예전에는 그냥 외웠는데, 이제는 이해하면서 말하게 됐어요.”
+            <span class="review-en">
+              “I used to just memorize phrases, but now I understand them and can actually use them.”
+            </span>
+            <footer>1:1 수업 수강생 · 1:1 Student</footer>
+          </blockquote>
+
+          <blockquote>
+            “25분이 짧을 줄 알았는데, 매주 꾸준히 말할 수 있어서 좋아요.”
+            <span class="review-en">
+              “I thought 25 minutes would be too short, but I love being able to practice speaking Korean every week.”
+            </span>
+            <footer>말해한글 수강생 · Korean Speaking Student</footer>
+          </blockquote>
+
+          <blockquote>
+            “실수할까 봐 망설였는데, 이제는 일단 말하는 자신감이 생겼어요.”
+            <span class="review-en">
+              “I used to fear mistakes, but now I’m confident enough to speak.”
+            </span>
+            <footer>1:1 수업 수강생 · 1:1 Student</footer>
+          </blockquote>
+
+        </div>
+      </div>
+    </section>
+
+    <section id="contact" class="contact">
+      <div class="wrap">
+        <p class="section-label">LET'S TALK <span class="label-en">수업 문의</span></p>
+
+        <h2>
+          한국어를 더 편하게<br>말하고 싶다면.
+        </h2>
+
+        <p class="contact-en">
+          Want to speak Korean more comfortably?
+        </p>
+
+        <p>
+          먼저 카카오톡으로 편하게 상담해 주세요.<br>
+          수업이 정해지면 신청서를 안내해 드립니다.
+          <span class="en">
+            Feel free to contact us on KakaoTalk first.
+            Once your class is confirmed, we will send you the registration form.
+          </span>
+        </p>
+
+        <button class="button primary" data-kakao>
+          카카오톡으로 수업 상담하기 · Contact Us
+        </button>
+
+        <div class="button-row secondary">
+          <a class="button" href="https://docs.google.com/forms/d/1k01R-bmoGL4NOIPsnwgy-sFB3lmlQijR-0NrEoJOe9Y/" target="_blank" rel="noopener">
+            신청서 바로 작성하기 · Registration Form
+          </a>
+        </div>
+
+        <p class="contact-note">
+          상담 후, 수업 확정 단계에서
+          <a href="https://docs.google.com/forms/d/1k01R-bmoGL4NOIPsnwgy-sFB3lmlQijR-0NrEoJOe9Y/" target="_blank" rel="noopener">구글폼 신청서</a>를 보내드립니다.
+          <br>
+          <span class="en">A Google Form will be sent after your class is confirmed.</span>
+        </p>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="site-footer">
+    <div class="wrap">
+      <div class="footer-top">
+        <span>서한글랩 · SEO HANGEUL LAB</span>
+        <span class="footer-links">
+          <a href="info.html">이용 안내 · Information</a>
+          <a href="privacy.html">개인정보처리방침 · Privacy</a>
+        </span>
+      </div>
+
+      <div>
+        대표자 서주형 · 경기도 과천시<br>
+        © 2026 SEO HANGEUL LAB. All rights reserved.
+      </div>
+    </div>
+  </footer>
+
+  <div class="modal" id="contact-modal" role="dialog" aria-modal="true" aria-labelledby="modal-title">
+    <div class="modal-panel">
+      <button class="modal-close" aria-label="닫기">×</button>
+
+      <p class="section-label">KAKAO TALK</p>
+
+      <h3 id="modal-title">
+        카카오톡 상담 링크를<br>연결해 주세요.
+      </h3>
+
+      <p>
+        아래 코드의 <b>KAKAO_URL</b>에 카카오톡 채널 또는 오픈채팅 링크를 붙여 넣으면,
+        이 버튼이 바로 상담창으로 연결됩니다.
+        <br><br>
+        Paste your KakaoTalk channel or open-chat link into <b>KAKAO_URL</b> in the code below.
+      </p>
+
+      <button class="button" onclick="document.getElementById('contact-modal').classList.remove('open')">
+        확인했어요 · Got it
+      </button>
+    </div>
+  </div>
+
+  <script>
+    // 실제 카카오톡 채널 또는 오픈채팅 링크를 따옴표 안에 붙여 넣으세요.
+    // Paste your actual KakaoTalk channel or open-chat link between the quotes.
+    const KAKAO_URL = 'https://open.kakao.com/o/sijckPIi';
+
+    document.querySelectorAll('[data-kakao]').forEach(button => {
+      button.addEventListener('click', () => {
+        if (KAKAO_URL) {
+          window.open(KAKAO_URL, '_blank', 'noopener');
+        } else {
+          document.getElementById('contact-modal').classList.add('open');
+        }
+      });
+    });
+
+    document.querySelector('.modal-close').addEventListener('click', () => {
+      document.getElementById('contact-modal').classList.remove('open');
+    });
+
+    document.getElementById('contact-modal').addEventListener('click', event => {
+      if (event.target.id === 'contact-modal') {
+        event.currentTarget.classList.remove('open');
+      }
+    });
+  </script>
+</body>
+</html>
