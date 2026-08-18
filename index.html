@@ -1066,5 +1066,18 @@
       }
     });
   </script>
+  <script>
+  if ('serviceWorker' in navigator) {
+    window.addEventListener('load', function () {
+      navigator.serviceWorker.register('./sw.js')
+        .then(function () {
+          console.log('SEO HANGEUL LAB PWA ready');
+        })
+        .catch(function (error) {
+          console.error('PWA registration failed:', error);
+        });
+    });
+  }
+</script>
 </body>
 </html>
