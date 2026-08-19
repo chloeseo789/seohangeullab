@@ -6,8 +6,7 @@ const FILES_TO_CACHE = [
   './manifest.json',
   './호.png',
   './info.html',
-  './privacy.html',
-  './learning.html'
+  './privacy.html'
 ];
 
 self.addEventListener('install', event => {
