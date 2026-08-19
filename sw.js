@@ -1,4 +1,4 @@
-const CACHE_NAME = 'seo-hangeul-lab-v2';
+const CACHE_NAME = 'seo-hangeul-lab-v3';
 
 const FILES_TO_CACHE = [
   './',
@@ -6,7 +6,8 @@ const FILES_TO_CACHE = [
   './manifest.json',
   './호.png',
   './info.html',
-  './privacy.html'
+  './privacy.html',
+  './learning.html'
 ];
 
 self.addEventListener('install', event => {
