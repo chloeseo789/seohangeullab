@@ -47,1064 +47,2758 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 
-</head>
-<meta name="description" content="서한글랩은 외국인을 위한 1:1 한국어 회화 수업입니다. 한국어 초급부터 자연스러운 일상 대화까지, 학습자의 레벨과 목표에 맞춰 함께 연습합니다.">
-
-<meta name="keywords" content="한국어 수업, 외국인 한국어 수업, 한국어 회화, 1:1 한국어, 온라인 한국어 수업, Korean class, Korean conversation, Korean tutor, Learn Korean">
-
-<meta name="author" content="SEO HANGEUL LAB">
-
-<meta name="robots" content="index, follow">
-
-<link rel="canonical" href="https://chloeseo789.github.io/seohangeullab/">
-
-<!-- Open Graph -->
-<meta property="og:type" content="website">
-<meta property="og:title" content="서한글랩 | 외국인을 위한 1:1 한국어 회화 수업">
-<meta property="og:description" content="Speak Korean naturally through real conversation. 외국인을 위한 1:1 맞춤 한국어 회화 수업입니다.">
-<meta property="og:url" content="https://chloeseo789.github.io/seohangeullab/">
-<meta property="og:site_name" content="SEO HANGEUL LAB">
-
-<!-- Twitter / X -->
-<meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="서한글랩 | 1:1 Korean Conversation Class">
-<meta name="twitter:description" content="Personalized Korean conversation lessons for international learners.">
-
-<!-- Google Fonts -->
-
-  <style>
-    @import url('https://fonts.googleapis.com/css2?family=Noto+Serif+KR:wght@400;500;600&family=Pretendard:wght@400;500;600;700&display=swap');
-
-    :root {
-      --cream:#fbf8f2;
-      --paper:#f1ece3;
-      --ink:#292823;
-      --muted:#716d65;
-      --line:#ded7ca;
-      --terra:#9e583f;
-      --terra-dark:#7b3e2a;
-      --white:#fffdf9;
-    }
-
-    * { box-sizing:border-box; }
-    html { scroll-behavior:smooth; }
-
-    body {
-      margin:0;
-      background:var(--cream);
-      color:var(--ink);
-      font-family:Pretendard,"Apple SD Gothic Neo",sans-serif;
-      line-height:1.65;
-      word-break:keep-all;
-    }
-
-    a { color:inherit; text-decoration:none; }
-    button { font:inherit; }
-
-    .wrap {
-      width:min(1120px, calc(100% - 48px));
-      margin:auto;
-    }
-
-    header {
-      height:88px;
-      display:flex;
-      justify-content:space-between;
-      align-items:center;
-    }
-
-    .brand {
-      display:flex;
-      align-items:center;
-      gap:10px;
-      font-size:18px;
-      font-weight:700;
-      letter-spacing:-.06em;
-    }
-
-    .brand-mark {
-      display:grid;
-      place-items:center;
-      width:29px;
-      height:29px;
-      border-radius:50%;
-      color:#fff;
-      background:var(--terra);
-      font-family:"Noto Serif KR",serif;
-      font-size:15px;
-    }
-
-    nav {
-      display:flex;
-      align-items:center;
-      gap:27px;
-      color:var(--muted);
-      font-size:14px;
-    }
-
-    nav a:hover { color:var(--terra); }
-
-    .nav-cta {
-      padding:9px 14px;
-      border:1px solid var(--ink);
-      color:var(--ink);
-    }
-
-    .hero {
-      min-height:620px;
-      padding:58px 0 96px;
-      display:grid;
-      grid-template-columns:1fr .83fr;
-      gap:70px;
-      align-items:center;
-    }
-
-    .eyebrow {
-      margin:0 0 16px;
-      color:var(--terra);
-      font-size:13px;
-      font-weight:700;
-      letter-spacing:.1em;
-    }
-
-    h1,h2,h3,p { margin-top:0; }
-
-    h1,h2 {
-      font-family:"Noto Serif KR","Batang",serif;
-      font-weight:500;
-      letter-spacing:-.075em;
-    }
-
-    h1 {
-      margin-bottom:20px;
-      font-size:clamp(40px,5vw,65px);
-      line-height:1.28;
-    }
-
-    .english-lead {
-      margin:0 0 22px;
-      color:var(--terra-dark);
-      font-size:19px;
-      font-weight:600;
-      line-height:1.5;
-    }
-
-    .hero-copy {
-      max-width:500px;
-      margin-bottom:33px;
-      color:var(--muted);
-      font-size:17px;
-    }
-
-    .hero-copy .en {
-      display:block;
-      margin-top:9px;
-      font-size:15px;
-      line-height:1.6;
-    }
-
-    .button-row {
-      display:flex;
-      gap:12px;
-      flex-wrap:wrap;
-    }
-
-    .button {
-      display:inline-flex;
-      justify-content:center;
-      align-items:center;
-      min-height:51px;
-      padding:0 21px;
-      border:1px solid var(--ink);
-      font-size:15px;
-      font-weight:600;
-      transition:.2s ease;
-      cursor:pointer;
-    }
-
-    .button:hover { transform:translateY(-2px); }
-
-    .button.primary {
-      border-color:var(--terra);
-      background:var(--terra);
-      color:white;
-    }
-
-    .button.primary:hover { background:var(--terra-dark); }
-
-    .hero-visual {
-      position:relative;
-      min-height:460px;
-      overflow:hidden;
-      background:var(--paper);
-    }
-
-    .hero-visual:before {
-      content:"";
-      position:absolute;
-      width:440px;
-      height:440px;
-      right:-120px;
-      top:-100px;
-      border-radius:50%;
-      background:#d9ab88;
-      opacity:.7;
-    }
-
-    .hero-visual:after {
-      content:"ㄱ ㅏ ㄴ ㅏ";
-      position:absolute;
-      left:50px;
-      bottom:33px;
-      color:rgba(41,40,35,.22);
-      font-family:"Noto Serif KR",serif;
-      font-size:46px;
-      letter-spacing:12px;
-    }
-
-    .notebook {
-      position:absolute;
-      left:13%;
-      top:19%;
-      width:62%;
-      height:61%;
-      transform:rotate(-8deg);
-      background:#fffdf9;
-      box-shadow:18px 21px 27px rgba(75,62,47,.14);
-      padding:35px 31px;
-    }
-
-    .notebook small {
-      display:block;
-      color:var(--terra);
-      font-weight:bold;
-      letter-spacing:.1em;
-    }
-
-    .notebook strong {
-      display:block;
-      margin-top:30px;
-      font-family:"Noto Serif KR",serif;
-      font-size:29px;
-      font-weight:500;
-    }
-
-    .notebook .note-en {
-      display:block;
-      margin-top:8px;
-      color:var(--muted);
-      font-size:13px;
-      line-height:1.5;
-    }
-
-    .notebook i {
-      display:block;
-      width:75%;
-      border-top:1px solid #ddd3c5;
-      margin-top:13px;
-    }
-
-    .notebook i:nth-of-type(2) { width:57%; }
-
-    section {
-      padding:110px 0;
-      border-top:1px solid var(--line);
-    }
-
-    .section-label {
-      color:var(--terra);
-      font-size:13px;
-      font-weight:700;
-      letter-spacing:.1em;
-    }
-
-    .label-en {
-      display:block;
-      margin-top:2px;
-      color:var(--muted);
-      font-size:11px;
-      font-weight:500;
-      letter-spacing:.04em;
-    }
-
-    .intro {
-      display:grid;
-      grid-template-columns:.85fr 1.15fr;
-      gap:90px;
-    }
-
-    h2 {
-      font-size:clamp(30px,3.5vw,45px);
-      line-height:1.43;
-    }
-
-    .en-heading {
-      display:block;
-      margin-top:12px;
-      color:var(--terra-dark);
-      font-family:Pretendard,sans-serif;
-      font-size:18px;
-      font-weight:600;
-      letter-spacing:-.02em;
-      line-height:1.45;
-    }
-
-    .intro-copy {
-      color:var(--muted);
-      font-size:17px;
-    }
-
-    .intro-copy p + p { margin-top:20px; }
-
-    .intro-copy .en-copy {
-      display:block;
-      margin-top:7px;
-      font-size:14px;
-      line-height:1.65;
-    }
-
-    .class-head {
-      display:flex;
-      justify-content:space-between;
-      align-items:end;
-      gap:30px;
-      margin-bottom:38px;
-    }
-
-    .class-head h2 { margin-bottom:0; }
-
-    .class-head > p {
-      max-width:390px;
-      margin-bottom:3px;
-      color:var(--muted);
-    }
-
-    .classes {
-      display:grid;
-      grid-template-columns:1fr 1fr;
-      gap:22px;
-    }
-
-    .class-card {
-      min-height:475px;
-      padding:38px;
-      background:var(--white);
-      border:1px solid var(--line);
-      display:flex;
-      flex-direction:column;
-    }
-
-    .class-index {
-      margin-bottom:31px;
-      color:var(--terra);
-      font-size:13px;
-      font-weight:700;
-    }
-
-    h3 {
-      margin-bottom:4px;
-      font-family:"Noto Serif KR",serif;
-      font-size:27px;
-      font-weight:500;
-      letter-spacing:-.06em;
-    }
-
-    .class-en-title {
-      margin-bottom:15px;
-      color:var(--terra-dark);
-      font-size:15px;
-      font-weight:600;
-    }
-
-    .class-time {
-      margin-bottom:27px;
-      color:var(--muted);
-      font-size:14px;
-    }
-
-    .class-desc {
-      max-width:370px;
-      color:var(--muted);
-    }
-
-    .class-desc .en {
-      display:block;
-      margin-top:10px;
-      font-size:14px;
-      line-height:1.65;
-    }
-
-    .card-bottom {
-      margin-top:auto;
-      padding-top:27px;
-      border-top:1px solid var(--line);
-      display:flex;
-      justify-content:space-between;
-      align-items:center;
-      font-size:14px;
-      font-weight:600;
-    }
-
-    .card-bottom .en {
-      display:block;
-      margin-top:2px;
-      color:var(--muted);
-      font-size:11px;
-      font-weight:500;
-    }
-
-    .arrow {
-      font-size:22px;
-      font-weight:400;
-    }
-
-    .flow {
-      background:var(--ink);
-      color:#fffdf9;
-    }
-
-    .flow .section-label { color:#e1a98e; }
-    .flow .label-en { color:#b9b4ac; }
-
-    .flow h2 {
-      max-width:620px;
-      margin:12px 0 50px;
-    }
-
-    .flow .en-heading {
-      color:#e1a98e;
-    }
-
-    .steps {
-      display:grid;
-      grid-template-columns:repeat(3,1fr);
-    }
-
-    .step {
-      min-height:245px;
-      padding:27px 28px 10px;
-      border-left:1px solid rgba(255,255,255,.25);
-    }
-
-    .step:first-child {
-      border-left:0;
-      padding-left:0;
-    }
-
-    .number {
-      color:#e1a98e;
-      font-size:13px;
-      font-weight:bold;
-    }
-
-    .step h3 {
-      margin:24px 0 3px;
-      font-size:23px;
-    }
-
-    .step h3 a {
-      border-bottom:1px solid rgba(225,169,142,.5);
-    }
-
-    .step h3 a:hover {
-      border-bottom-color:#e1a98e;
-    }
-
-    .step .step-en {
-      margin-bottom:10px;
-      color:#e1a98e;
-      font-size:14px;
-      font-weight:600;
-    }
-
-    .step p {
-      color:#d5d0c7;
-      font-size:15px;
-    }
-
-    .step p .en {
-      display:block;
-      margin-top:7px;
-      color:#aaa59d;
-      font-size:13px;
-      line-height:1.6;
-    }
-
-    .review-title { margin-bottom:38px; }
-
-    .reviews {
-      display:grid;
-      grid-template-columns:repeat(3,1fr);
-      gap:20px;
-    }
-
-    blockquote {
-      min-height:250px;
-      margin:0;
-      padding:27px;
-      background:var(--paper);
-      font-family:"Noto Serif KR",serif;
-      font-size:18px;
-      line-height:1.7;
-      letter-spacing:-.05em;
-    }
-
-    blockquote .review-en {
-      display:block;
-      margin-top:12px;
-      color:var(--muted);
-      font-family:Pretendard,sans-serif;
-      font-size:13px;
-      line-height:1.6;
-      letter-spacing:0;
-    }
-
-    blockquote footer {
-      margin-top:22px;
-      color:var(--muted);
-      font-family:Pretendard,sans-serif;
-      font-size:13px;
-    }
-
-    .contact {
-      text-align:center;
-      padding:125px 0;
-    }
-
-    .contact h2 { margin:12px 0 8px; }
-
-    .contact .contact-en {
-      margin:0 0 18px;
-      color:var(--terra-dark);
-      font-size:18px;
-      font-weight:600;
-    }
-
-    .contact p {
-      margin:0 auto 31px;
-      color:var(--muted);
-    }
-
-    .contact p .en {
-      display:block;
-      margin-top:8px;
-      font-size:14px;
-      line-height:1.6;
-    }
-
-    .contact-note {
-      margin-top:18px !important;
-      font-size:13px;
-    }
-
-    .contact-note a {
-      color:var(--terra-dark);
-      font-weight:600;
-      border-bottom:1px solid var(--terra-dark);
-    }
-
-    .button-row.secondary {
-      justify-content:center;
-      margin-top:14px;
-    }
-
-    footer.site-footer {
-      padding:35px 0 46px;
-      border-top:1px solid var(--line);
-      color:var(--muted);
-      font-size:13px;
-    }
-
-    .footer-top {
-      display:flex;
-      justify-content:space-between;
-      gap:20px;
-      margin-bottom:24px;
-      color:var(--ink);
-      font-weight:600;
-    }
-
-    .footer-links {
-      display:flex;
-      gap:16px;
-    }
-
-    .footer-links a:hover {
-      color:var(--terra);
-    }
-
-    .modal {
-      display:none;
-      position:fixed;
-      z-index:5;
-      inset:0;
-      padding:20px;
-      background:rgba(25,24,20,.48);
-      align-items:center;
-      justify-content:center;
-    }
-
-    .modal.open { display:flex; }
-
-    .modal-panel {
-      position:relative;
-      width:min(460px,100%);
-      padding:41px;
-      background:var(--cream);
-      box-shadow:0 15px 45px rgba(0,0,0,.2);
-    }
-
-    .modal-panel h3 { margin-bottom:15px; }
-
-    .modal-panel p { color:var(--muted); }
-
-    .modal-close {
-      position:absolute;
-      right:17px;
-      top:12px;
-      border:0;
-      background:transparent;
-      font-size:27px;
-      cursor:pointer;
-    }
-
-    @media (max-width:720px) {
-      .wrap { width:min(100% - 36px,1120px); }
-      header { height:73px; }
-      nav { gap:14px; font-size:13px; }
-      nav a:not(.nav-cta) { display:none; }
-
-      .hero {
-        min-height:auto;
-        padding:43px 0 65px;
-        grid-template-columns:1fr;
-        gap:42px;
-      }
-
-      .hero-visual { min-height:340px; }
-
-      .intro,.classes,.reviews { grid-template-columns:1fr; }
-
-      section { padding:73px 0; }
-
-      .intro { gap:27px; }
-
-      .class-head {
-        display:block;
-        margin-bottom:28px;
-      }
-
-      .class-head h2 { margin-bottom:17px; }
-
-      .class-card {
-        min-height:390px;
-        padding:29px;
-      }
-
-      .steps { grid-template-columns:1fr; }
-
-      .step,.step:first-child {
-        min-height:auto;
-        padding:25px 0;
-        border-left:0;
-        border-top:1px solid rgba(255,255,255,.25);
-      }
-
-      .step:first-child { border-top:0; }
-
-      .contact { padding:85px 0; }
-
-      .footer-top {
-        display:block;
-      }
-
-      .footer-links {
-        margin-top:13px;
-      }
-    }
-  </style>
+<style>
+
+@import url('https://fonts.googleapis.com/css2?family=Noto+Serif+KR:wght@400;500;600&family=Pretendard:wght@400;500;600;700&display=swap');
+
+:root {
+  --cream:#fbf8f2;
+  --paper:#f1ece3;
+  --ink:#292823;
+  --muted:#716d65;
+  --line:#ded7ca;
+  --terra:#9e583f;
+  --terra-dark:#7b3e2a;
+  --white:#fffdf9;
+}
+
+* {
+  box-sizing:border-box;
+}
+
+html {
+  scroll-behavior:smooth;
+}
+
+body {
+  margin:0;
+  background:var(--cream);
+  color:var(--ink);
+  font-family:Pretendard,"Apple SD Gothic Neo",sans-serif;
+  line-height:1.65;
+  word-break:keep-all;
+}
+
+a {
+  color:inherit;
+  text-decoration:none;
+}
+
+button {
+  font:inherit;
+}
+
+.wrap {
+  width:min(1120px, calc(100% - 48px));
+  margin:auto;
+}
+
+/* HEADER */
+
+header {
+  min-height:88px;
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  gap:20px;
+}
+
+.brand {
+  display:flex;
+  align-items:center;
+  gap:10px;
+  font-size:18px;
+  font-weight:700;
+  letter-spacing:-.06em;
+  flex-shrink:0;
+}
+
+.brand-mark {
+  display:grid;
+  place-items:center;
+  width:29px;
+  height:29px;
+  border-radius:50%;
+  color:#fff;
+  background:var(--terra);
+  font-family:"Noto Serif KR",serif;
+  font-size:15px;
+}
+
+nav {
+  display:flex;
+  align-items:center;
+  gap:23px;
+  color:var(--muted);
+  font-size:13px;
+}
+
+nav a:hover {
+  color:var(--terra);
+}
+
+.nav-cta {
+  padding:9px 14px;
+  border:1px solid var(--ink);
+  color:var(--ink);
+}
+
+.nav-learning {
+  color:var(--terra-dark);
+  font-weight:700;
+}
+
+/* HERO */
+
+.hero {
+  min-height:620px;
+  padding:58px 0 96px;
+  display:grid;
+  grid-template-columns:1fr .83fr;
+  gap:70px;
+  align-items:center;
+}
+
+.eyebrow {
+  margin:0 0 16px;
+  color:var(--terra);
+  font-size:13px;
+  font-weight:700;
+  letter-spacing:.1em;
+}
+
+h1,h2,h3,p {
+  margin-top:0;
+}
+
+h1,h2 {
+  font-family:"Noto Serif KR","Batang",serif;
+  font-weight:500;
+  letter-spacing:-.075em;
+}
+
+h1 {
+  margin-bottom:20px;
+  font-size:clamp(40px,5vw,65px);
+  line-height:1.28;
+}
+
+.english-lead {
+  margin:0 0 22px;
+  color:var(--terra-dark);
+  font-size:19px;
+  font-weight:600;
+  line-height:1.5;
+}
+
+.hero-copy {
+  max-width:500px;
+  margin-bottom:33px;
+  color:var(--muted);
+  font-size:17px;
+}
+
+.hero-copy .en {
+  display:block;
+  margin-top:9px;
+  font-size:15px;
+  line-height:1.6;
+}
+
+.button-row {
+  display:flex;
+  gap:12px;
+  flex-wrap:wrap;
+}
+
+.button {
+  display:inline-flex;
+  justify-content:center;
+  align-items:center;
+  min-height:51px;
+  padding:0 21px;
+  border:1px solid var(--ink);
+  font-size:15px;
+  font-weight:600;
+  transition:.2s ease;
+  cursor:pointer;
+  background:transparent;
+}
+
+.button:hover {
+  transform:translateY(-2px);
+}
+
+.button.primary {
+  border-color:var(--terra);
+  background:var(--terra);
+  color:white;
+}
+
+.button.primary:hover {
+  background:var(--terra-dark);
+}
+
+/* HERO VISUAL */
+
+.hero-visual {
+  position:relative;
+  min-height:460px;
+  overflow:hidden;
+  background:var(--paper);
+}
+
+.hero-visual:before {
+  content:"";
+  position:absolute;
+  width:440px;
+  height:440px;
+  right:-120px;
+  top:-100px;
+  border-radius:50%;
+  background:#d9ab88;
+  opacity:.7;
+}
+
+.hero-visual:after {
+  content:"ㄱ ㅏ ㄴ ㅏ";
+  position:absolute;
+  left:50px;
+  bottom:33px;
+  color:rgba(41,40,35,.22);
+  font-family:"Noto Serif KR",serif;
+  font-size:46px;
+  letter-spacing:12px;
+}
+
+.notebook {
+  position:absolute;
+  left:13%;
+  top:19%;
+  width:62%;
+  height:61%;
+  transform:rotate(-8deg);
+  background:#fffdf9;
+  box-shadow:18px 21px 27px rgba(75,62,47,.14);
+  padding:35px 31px;
+}
+
+.notebook small {
+  display:block;
+  color:var(--terra);
+  font-weight:bold;
+  letter-spacing:.1em;
+}
+
+.notebook strong {
+  display:block;
+  margin-top:30px;
+  font-family:"Noto Serif KR",serif;
+  font-size:29px;
+  font-weight:500;
+}
+
+.notebook .note-en {
+  display:block;
+  margin-top:8px;
+  color:var(--muted);
+  font-size:13px;
+  line-height:1.5;
+}
+
+.notebook i {
+  display:block;
+  width:75%;
+  border-top:1px solid #ddd3c5;
+  margin-top:13px;
+}
+
+.notebook i:nth-of-type(2) {
+  width:57%;
+}
+
+/* SECTIONS */
+
+section {
+  padding:110px 0;
+  border-top:1px solid var(--line);
+}
+
+.section-label {
+  color:var(--terra);
+  font-size:13px;
+  font-weight:700;
+  letter-spacing:.1em;
+}
+
+.label-en {
+  display:block;
+  margin-top:2px;
+  color:var(--muted);
+  font-size:11px;
+  font-weight:500;
+  letter-spacing:.04em;
+}
+
+.intro {
+  display:grid;
+  grid-template-columns:.85fr 1.15fr;
+  gap:90px;
+}
+
+h2 {
+  font-size:clamp(30px,3.5vw,45px);
+  line-height:1.43;
+}
+
+.en-heading {
+  display:block;
+  margin-top:12px;
+  color:var(--terra-dark);
+  font-family:Pretendard,sans-serif;
+  font-size:18px;
+  font-weight:600;
+  letter-spacing:-.02em;
+  line-height:1.45;
+}
+
+.intro-copy {
+  color:var(--muted);
+  font-size:17px;
+}
+
+.intro-copy p + p {
+  margin-top:20px;
+}
+
+.intro-copy .en-copy {
+  display:block;
+  margin-top:7px;
+  font-size:14px;
+  line-height:1.65;
+}
+
+/* CLASSES */
+
+.class-head {
+  display:flex;
+  justify-content:space-between;
+  align-items:end;
+  gap:30px;
+  margin-bottom:38px;
+}
+
+.class-head h2 {
+  margin-bottom:0;
+}
+
+.class-head > p {
+  max-width:390px;
+  margin-bottom:3px;
+  color:var(--muted);
+}
+
+.classes {
+  display:grid;
+  grid-template-columns:1fr 1fr;
+  gap:22px;
+}
+
+.class-card {
+  min-height:475px;
+  padding:38px;
+  background:var(--white);
+  border:1px solid var(--line);
+  display:flex;
+  flex-direction:column;
+}
+
+.class-index {
+  margin-bottom:31px;
+  color:var(--terra);
+  font-size:13px;
+  font-weight:700;
+}
+
+h3 {
+  margin-bottom:4px;
+  font-family:"Noto Serif KR",serif;
+  font-size:27px;
+  font-weight:500;
+  letter-spacing:-.06em;
+}
+
+.class-en-title {
+  margin-bottom:15px;
+  color:var(--terra-dark);
+  font-size:15px;
+  font-weight:600;
+}
+
+.class-time {
+  margin-bottom:27px;
+  color:var(--muted);
+  font-size:14px;
+}
+
+.class-desc {
+  max-width:370px;
+  color:var(--muted);
+}
+
+.class-desc .en {
+  display:block;
+  margin-top:10px;
+  font-size:14px;
+  line-height:1.65;
+}
+
+.card-bottom {
+  margin-top:auto;
+  padding-top:27px;
+  border-top:1px solid var(--line);
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  font-size:14px;
+  font-weight:600;
+}
+
+.card-bottom .en {
+  display:block;
+  margin-top:2px;
+  color:var(--muted);
+  font-size:11px;
+  font-weight:500;
+}
+
+.arrow {
+  font-size:22px;
+  font-weight:400;
+}
+
+/* FLOW */
+
+.flow {
+  background:var(--ink);
+  color:#fffdf9;
+}
+
+.flow .section-label {
+  color:#e1a98e;
+}
+
+.flow .label-en {
+  color:#b9b4ac;
+}
+
+.flow h2 {
+  max-width:620px;
+  margin:12px 0 50px;
+}
+
+.flow .en-heading {
+  color:#e1a98e;
+}
+
+.steps {
+  display:grid;
+  grid-template-columns:repeat(3,1fr);
+}
+
+.step {
+  min-height:245px;
+  padding:27px 28px 10px;
+  border-left:1px solid rgba(255,255,255,.25);
+}
+
+.step:first-child {
+  border-left:0;
+  padding-left:0;
+}
+
+.number {
+  color:#e1a98e;
+  font-size:13px;
+  font-weight:bold;
+}
+
+.step h3 {
+  margin:24px 0 3px;
+  font-size:23px;
+}
+
+.step h3 a {
+  border-bottom:1px solid rgba(225,169,142,.5);
+}
+
+.step h3 a:hover {
+  border-bottom-color:#e1a98e;
+}
+
+.step .step-en {
+  margin-bottom:10px;
+  color:#e1a98e;
+  font-size:14px;
+  font-weight:600;
+}
+
+.step p {
+  color:#d5d0c7;
+  font-size:15px;
+}
+
+.step p .en {
+  display:block;
+  margin-top:7px;
+  color:#aaa59d;
+  font-size:13px;
+  line-height:1.6;
+}
+
+/* REVIEWS */
+
+.review-title {
+  margin-bottom:38px;
+}
+
+.reviews {
+  display:grid;
+  grid-template-columns:repeat(3,1fr);
+  gap:20px;
+}
+
+blockquote {
+  min-height:250px;
+  margin:0;
+  padding:27px;
+  background:var(--paper);
+  font-family:"Noto Serif KR",serif;
+  font-size:18px;
+  line-height:1.7;
+  letter-spacing:-.05em;
+}
+
+blockquote .review-en {
+  display:block;
+  margin-top:12px;
+  color:var(--muted);
+  font-family:Pretendard,sans-serif;
+  font-size:13px;
+  line-height:1.6;
+  letter-spacing:0;
+}
+
+blockquote footer {
+  margin-top:22px;
+  color:var(--muted);
+  font-family:Pretendard,sans-serif;
+  font-size:13px;
+}
+
+/* MY LEARNING */
+
+.learning-section {
+  background:var(--paper);
+}
+
+.learning-head {
+  display:flex;
+  justify-content:space-between;
+  align-items:end;
+  gap:30px;
+  margin-bottom:35px;
+}
+
+.learning-head h2 {
+  margin:12px 0 0;
+}
+
+.learning-intro {
+  max-width:420px;
+  color:var(--muted);
+  font-size:15px;
+}
+
+.learning-intro .en {
+  display:block;
+  margin-top:7px;
+  font-size:13px;
+}
+
+.learning-empty {
+  padding:50px 30px;
+  background:var(--white);
+  border:1px solid var(--line);
+  text-align:center;
+}
+
+.learning-empty h3 {
+  margin-bottom:10px;
+}
+
+.learning-empty p {
+  margin-bottom:23px;
+  color:var(--muted);
+  font-size:14px;
+}
+
+.learning-list {
+  display:grid;
+  gap:16px;
+}
+
+.learning-card {
+  padding:27px 30px;
+  background:var(--white);
+  border:1px solid var(--line);
+}
+
+.learning-card-top {
+  display:flex;
+  justify-content:space-between;
+  align-items:start;
+  gap:20px;
+}
+
+.learning-date {
+  color:var(--terra);
+  font-size:13px;
+  font-weight:700;
+}
+
+.learning-card h3 {
+  margin:6px 0 3px;
+  font-size:22px;
+}
+
+.learning-actions {
+  display:flex;
+  gap:7px;
+}
+
+.learning-action {
+  padding:6px 10px;
+  border:1px solid var(--line);
+  background:transparent;
+  color:var(--muted);
+  font-size:12px;
+  cursor:pointer;
+}
+
+.learning-action:hover {
+  border-color:var(--terra);
+  color:var(--terra);
+}
+
+.learning-content {
+  margin-top:21px;
+  padding-top:19px;
+  border-top:1px solid var(--line);
+}
+
+.learning-item {
+  margin-bottom:15px;
+}
+
+.learning-item:last-child {
+  margin-bottom:0;
+}
+
+.learning-item strong {
+  display:block;
+  margin-bottom:4px;
+  color:var(--ink);
+  font-size:13px;
+}
+
+.learning-item p {
+  margin:0;
+  color:var(--muted);
+  white-space:pre-wrap;
+  font-size:14px;
+}
+
+/* LEARNING MODAL */
+
+.learning-modal {
+  display:none;
+  position:fixed;
+  z-index:20;
+  inset:0;
+  padding:20px;
+  background:rgba(25,24,20,.55);
+  align-items:center;
+  justify-content:center;
+}
+
+.learning-modal.open {
+  display:flex;
+}
+
+.learning-panel {
+  position:relative;
+  width:min(580px,100%);
+  max-height:90vh;
+  overflow:auto;
+  padding:35px;
+  background:var(--cream);
+  box-shadow:0 15px 45px rgba(0,0,0,.2);
+}
+
+.learning-panel h3 {
+  margin-bottom:5px;
+}
+
+.learning-panel .modal-subtitle {
+  margin-bottom:25px;
+  color:var(--terra);
+  font-size:13px;
+}
+
+.form-group {
+  margin-bottom:18px;
+}
+
+.form-group label {
+  display:block;
+  margin-bottom:6px;
+  color:var(--ink);
+  font-size:13px;
+  font-weight:700;
+}
+
+.form-group input,
+.form-group textarea {
+  width:100%;
+  padding:12px 13px;
+  border:1px solid var(--line);
+  background:var(--white);
+  color:var(--ink);
+  font-family:inherit;
+  font-size:14px;
+  outline:none;
+}
+
+.form-group input:focus,
+.form-group textarea:focus {
+  border-color:var(--terra);
+}
+
+.form-group textarea {
+  min-height:95px;
+  resize:vertical;
+}
+
+.learning-form-buttons {
+  display:flex;
+  justify-content:flex-end;
+  gap:10px;
+  margin-top:25px;
+}
+
+.cancel-button {
+  border:1px solid var(--line);
+  background:transparent;
+  color:var(--muted);
+}
+
+.learning-close {
+  position:absolute;
+  right:15px;
+  top:10px;
+  border:0;
+  background:transparent;
+  font-size:27px;
+  cursor:pointer;
+  color:var(--muted);
+}
+
+/* CONTACT */
+
+.contact {
+  text-align:center;
+  padding:125px 0;
+}
+
+.contact h2 {
+  margin:12px 0 8px;
+}
+
+.contact .contact-en {
+  margin:0 0 18px;
+  color:var(--terra-dark);
+  font-size:18px;
+  font-weight:600;
+}
+
+.contact p {
+  margin:0 auto 31px;
+  color:var(--muted);
+}
+
+.contact p .en {
+  display:block;
+  margin-top:8px;
+  font-size:14px;
+  line-height:1.6;
+}
+
+.contact-note {
+  margin-top:18px !important;
+  font-size:13px;
+}
+
+.contact-note a {
+  color:var(--terra-dark);
+  font-weight:600;
+  border-bottom:1px solid var(--terra-dark);
+}
+
+.button-row.secondary {
+  justify-content:center;
+  margin-top:14px;
+}
+
+/* FOOTER */
+
+footer.site-footer {
+  padding:35px 0 46px;
+  border-top:1px solid var(--line);
+  color:var(--muted);
+  font-size:13px;
+}
+
+.footer-top {
+  display:flex;
+  justify-content:space-between;
+  gap:20px;
+  margin-bottom:24px;
+  color:var(--ink);
+  font-weight:600;
+}
+
+.footer-links {
+  display:flex;
+  gap:16px;
+}
+
+.footer-links a:hover {
+  color:var(--terra);
+}
+
+/* CONTACT MODAL */
+
+.modal {
+  display:none;
+  position:fixed;
+  z-index:10;
+  inset:0;
+  padding:20px;
+  background:rgba(25,24,20,.48);
+  align-items:center;
+  justify-content:center;
+}
+
+.modal.open {
+  display:flex;
+}
+
+.modal-panel {
+  position:relative;
+  width:min(460px,100%);
+  padding:41px;
+  background:var(--cream);
+  box-shadow:0 15px 45px rgba(0,0,0,.2);
+}
+
+.modal-panel h3 {
+  margin-bottom:15px;
+}
+
+.modal-panel p {
+  color:var(--muted);
+}
+
+.modal-close {
+  position:absolute;
+  right:17px;
+  top:12px;
+  border:0;
+  background:transparent;
+  font-size:27px;
+  cursor:pointer;
+}
+
+/* MOBILE */
+
+@media (max-width:720px) {
+
+  .wrap {
+    width:min(100% - 36px,1120px);
+  }
+
+  header {
+    min-height:73px;
+  }
+
+  nav {
+    gap:11px;
+    font-size:11px;
+  }
+
+  nav a:not(.nav-learning):not(.nav-cta) {
+    display:none;
+  }
+
+  .nav-learning {
+    display:block !important;
+  }
+
+  .nav-cta {
+    padding:7px 10px;
+  }
+
+  .hero {
+    min-height:auto;
+    padding:43px 0 65px;
+    grid-template-columns:1fr;
+    gap:42px;
+  }
+
+  .hero-visual {
+    min-height:340px;
+  }
+
+  .intro,
+  .classes,
+  .reviews {
+    grid-template-columns:1fr;
+  }
+
+  section {
+    padding:73px 0;
+  }
+
+  .intro {
+    gap:27px;
+  }
+
+  .class-head {
+    display:block;
+    margin-bottom:28px;
+  }
+
+  .class-head h2 {
+    margin-bottom:17px;
+  }
+
+  .class-card {
+    min-height:390px;
+    padding:29px;
+  }
+
+  .steps {
+    grid-template-columns:1fr;
+  }
+
+  .step,
+  .step:first-child {
+    min-height:auto;
+    padding:25px 0;
+    border-left:0;
+    border-top:1px solid rgba(255,255,255,.25);
+  }
+
+  .step:first-child {
+    border-top:0;
+  }
+
+  .learning-head {
+    display:block;
+  }
+
+  .learning-intro {
+    margin-top:17px;
+  }
+
+  .learning-card {
+    padding:22px;
+  }
+
+  .learning-card-top {
+    display:block;
+  }
+
+  .learning-actions {
+    margin-top:13px;
+  }
+
+  .contact {
+    padding:85px 0;
+  }
+
+  .footer-top {
+    display:block;
+  }
+
+  .footer-links {
+    margin-top:13px;
+    flex-wrap:wrap;
+  }
+
+  .learning-panel {
+    padding:28px 22px;
+  }
+
+}
+
+</style>
+
 </head>
 
 <body>
-  <header class="wrap">
-    <a class="brand" href="#top" aria-label="서한글랩 처음으로">
-      <span class="brand-mark">서</span>서한글랩
+
+<header class="wrap">
+
+  <a class="brand" href="#top" aria-label="서한글랩 처음으로">
+    <span class="brand-mark">서</span>
+    서한글랩
+  </a>
+
+  <nav aria-label="Main menu">
+
+    <a href="#about">ABOUT</a>
+
+    <a href="#classes">CLASSES</a>
+
+    <a href="#reviews">CLASS NOTES</a>
+
+    <!-- 새로 추가된 MY LEARNING -->
+    <a href="#learning" class="nav-learning">
+      MY LEARNING
     </a>
 
-    <nav aria-label="Main menu">
-      <a href="#about">ABOUT</a>
-      <a href="#classes">CLASSES</a>
-      <a href="#reviews">CLASS NOTES</a>
-      <a href="#contact" class="nav-cta">CONTACT</a>
-    </nav>
-  </header>
+    <a href="#contact" class="nav-cta">
+      CONTACT
+    </a>
 
-  <main id="top">
+  </nav>
 
-    <div class="wrap hero">
-      <div>
-        <p class="eyebrow">SEO HANGEUL LAB · 1:1 KOREAN CLASS</p>
+</header>
 
-        <h1>자연스러운 한국어를<br>구사할 수 있도록, 대화합니다.</h1>
 
-        <p class="english-lead">
-          Speak Korean naturally,<br>through real conversation.
-        </p>
+<main id="top">
 
-        <p class="hero-copy">
-          답을 외우는 데서 멈추지 않고, 오늘 배운 표현을 실제 대화에서 쓸 수 있도록 함께 연습합니다.
-          <span class="en">
-            Instead of simply memorizing Korean, we practice using what you learn in real conversations.
-          </span>
-        </p>
 
-        <div class="button-row">
-          <a href="#contact" class="button primary">카카오톡으로 수업 상담하기</a>
-          <a href="#classes" class="button">수업 살펴보기 · View Classes</a>
-        </div>
-      </div>
+<!-- HERO -->
 
-      <div class="hero-visual" aria-label="Korean lesson notebook illustration">
-        <div class="notebook">
-          <small>SEO HANGEUL LAB</small>
-          <strong>오늘의 표현<br>어떤 일이 있었어요?</strong>
-          <span class="note-en">Today's expression · What happened?</span>
-          <i></i>
-          <i></i>
-        </div>
-      </div>
+<div class="wrap hero">
+
+  <div>
+
+    <p class="eyebrow">
+      SEO HANGEUL LAB · 1:1 KOREAN CLASS
+    </p>
+
+    <h1>
+      자연스러운 한국어를<br>
+      구사할 수 있도록, 대화합니다.
+    </h1>
+
+    <p class="english-lead">
+      Speak Korean naturally,<br>
+      through real conversation.
+    </p>
+
+    <p class="hero-copy">
+      답을 외우는 데서 멈추지 않고,
+      오늘 배운 표현을 실제 대화에서 쓸 수 있도록 함께 연습합니다.
+
+      <span class="en">
+        Instead of simply memorizing Korean,
+        we practice using what you learn in real conversations.
+      </span>
+    </p>
+
+    <div class="button-row">
+
+      <a href="#contact" class="button primary">
+        카카오톡으로 수업 상담하기
+      </a>
+
+      <a href="#classes" class="button">
+        수업 살펴보기 · View Classes
+      </a>
+
     </div>
 
-    <section id="about">
-      <div class="wrap intro">
-        <div>
-          <p class="section-label">ABOUT <span class="label-en">서한글랩 소개</span></p>
-          <h2>
-            많이 배우기보다,<br>제대로 말할 수 있도록.
-            <span class="en-heading">Less memorizing.<br>More speaking.</span>
-          </h2>
-        </div>
+  </div>
 
-        <div class="intro-copy">
-          <p>
-            서한글랩은 정해진 진도보다 한 사람 한 사람의 속도와 목표를 중요하게 생각합니다.
-            단순히 외우기보다 이해하는 것이 진짜 학습이라고 믿습니다.
-            <span class="en-copy">
-              SEO HANGEUL LAB values each learner’s pace and goals over a fixed curriculum.
-              We believe true learning comes from understanding, not simply memorizing.
-            </span>
-          </p>
 
-          <p>
-            기초부터 자연스러운 대화까지, 지금 필요한 표현을 함께 찾고 자연스럽게 말할 수 있도록 연습합니다.
-            <span class="en-copy">
-              From the basics to natural conversation, we focus on the expressions you need to speak naturally.
-            </span>
-          </p>
-        </div>
-      </div>
-    </section>
+  <div class="hero-visual" aria-label="Korean lesson notebook illustration">
 
-    <section id="classes">
-      <div class="wrap">
-        <div class="class-head">
-          <div>
-            <p class="section-label">CLASSES <span class="label-en">수업 안내</span></p>
-            <h2>
-              나에게 맞는 수업을 골라보세요.
-              <span class="en-heading">Choose the class that fits you.</span>
-            </h2>
-          </div>
+    <div class="notebook">
 
-          <p>
-            수업 전 간단한 상담을 통해 현재 레벨과 목표를 확인하고 가장 알맞은 방향을 함께 정합니다.
-            <span class="en-copy">
-              We first check your level and goals, then choose the best learning direction together.
-            </span>
-          </p>
-        </div>
+      <small>SEO HANGEUL LAB</small>
 
-        <div class="classes">
+      <strong>
+        오늘의 표현<br>
+        어떤 일이 있었어요?
+      </strong>
 
-          <a class="class-card" href="#contact">
-            <p class="class-index">01</p>
+      <span class="note-en">
+        Today's expression · What happened?
+      </span>
 
-            <h3>1:1 맞춤 수업</h3>
-            <p class="class-en-title">1:1 Personalized Korean Class</p>
+      <i></i>
+      <i></i>
 
-            <p class="class-time">
-              50분 · 레벨 맞춤형 집중 수업
-              <br>50 min · Personalized to your level and goals
-            </p>
+    </div>
 
-            <p class="class-desc">
-              문법, 말하기, 듣기, 쓰기를 목표에 맞춰 균형 있게 다룹니다.
-              내 속도로 차근차근 실력을 쌓고 싶은 분께 추천해요.
-              <span class="en">
-                A personalized 50-minute lesson covering grammar, speaking, listening, and writing
-                according to your goals. Perfect if you want to build your Korean step by step at your own pace.
-              </span>
-            </p>
+  </div>
 
-            <span class="card-bottom">
-              <span>
-                수업 상담하기
-                <span class="en">Ask about this class</span>
-              </span>
-              <span class="arrow">→</span>
-            </span>
-          </a>
+</div>
 
-          <a class="class-card" href="#contact">
-            <p class="class-index">02</p>
 
-            <h3>25분 말해한글</h3>
-            <p class="class-en-title">25-min Korean Speaking Practice</p>
+<!-- ABOUT -->
 
-            <p class="class-time">
-              25분 · 주제별 실전 말하기
-              <br>25 min · Topic-based speaking practice
-            </p>
+<section id="about">
 
-            <p class="class-desc">
-              짧고 자주 말하며 한국어 감각을 키우는 대화 중심 수업입니다.
-              배운 표현을 실제 상황처럼 바로 연습해요.
-              <span class="en">
-                A short, conversation-focused lesson designed to build Korean speaking confidence
-                through frequent practice and realistic situations.
-              </span>
-            </p>
+  <div class="wrap intro">
 
-            <span class="card-bottom">
-              <span>
-                수업 상담하기
-                <span class="en">Ask about this class</span>
-              </span>
-              <span class="arrow">→</span>
-            </span>
-          </a>
+    <div>
 
-        </div>
-      </div>
-    </section>
+      <p class="section-label">
+        ABOUT
+        <span class="label-en">서한글랩 소개</span>
+      </p>
 
-    <section class="flow">
-      <div class="wrap">
+      <h2>
+
+        많이 배우기보다,<br>
+        제대로 말할 수 있도록.
+
+        <span class="en-heading">
+          Less memorizing.<br>
+          More speaking.
+        </span>
+
+      </h2>
+
+    </div>
+
+
+    <div class="intro-copy">
+
+      <p>
+
+        서한글랩은 정해진 진도보다
+        한 사람 한 사람의 속도와 목표를 중요하게 생각합니다.
+        단순히 외우기보다 이해하는 것이 진짜 학습이라고 믿습니다.
+
+        <span class="en-copy">
+          SEO HANGEUL LAB values each learner’s pace and goals over a fixed curriculum.
+          We believe true learning comes from understanding, not simply memorizing.
+        </span>
+
+      </p>
+
+
+      <p>
+
+        기초부터 자연스러운 대화까지,
+        지금 필요한 표현을 함께 찾고 자연스럽게 말할 수 있도록 연습합니다.
+
+        <span class="en-copy">
+          From the basics to natural conversation,
+          we focus on the expressions you need to speak naturally.
+        </span>
+
+      </p>
+
+    </div>
+
+  </div>
+
+</section>
+
+
+<!-- CLASSES -->
+
+<section id="classes">
+
+  <div class="wrap">
+
+    <div class="class-head">
+
+      <div>
+
         <p class="section-label">
-          HOW IT WORKS <span class="label-en">수업 시작 방법</span>
+          CLASSES
+          <span class="label-en">수업 안내</span>
         </p>
 
         <h2>
-          부담 없이 상담하고,<br>나에게 맞게 시작해요.
-          <span class="en-heading">Talk with us first. Then start at your own pace.</span>
+
+          나에게 맞는 수업을 골라보세요.
+
+          <span class="en-heading">
+            Choose the class that fits you.
+          </span>
+
         </h2>
 
-        <div class="steps">
-
-          <div class="step">
-            <span class="number">01</span>
-            <h3>카카오톡 상담</h3>
-            <p class="step-en">KakaoTalk Consultation</p>
-            <p>
-              궁금한 점과 학습 목표를 편하게 들려주세요.
-              수업 방식과 가능한 시간을 안내합니다.
-              <span class="en">
-                Tell us about your goals and questions.
-                We will explain the class options and available times.
-              </span>
-            </p>
-          </div>
-
-          <div class="step">
-            <span class="number">02</span>
-            <h3>수업 방향 정하기</h3>
-            <p class="step-en">Choose Your Learning Direction</p>
-            <p>
-              현재 레벨과 목표를 바탕으로 수업 종류와 학습 방향을 함께 정합니다.
-              <span class="en">
-                Based on your level and goals, we decide which class and learning direction are right for you.
-              </span>
-            </p>
-          </div>
-
-          <div class="step">
-            <span class="number">03</span>
-            <h3><a href="https://docs.google.com/forms/d/1k01R-bmoGL4NOIPsnwgy-sFB3lmlQijR-0NrEoJOe9Y/viewform" target="_blank" rel="noopener">신청서 작성</a></h3>
-            <p class="step-en">Complete the Registration Form</p>
-            <p>
-              수업을 진행하기로 결정했다면 간단한 구글폼으로 정보를 남겨주세요.
-              <span class="en">
-                Once you decide to join, simply complete a short Google Form to register.
-              </span>
-            </p>
-          </div>
-
-        </div>
       </div>
-    </section>
 
-    <section id="reviews">
-      <div class="wrap">
-        <div class="review-title">
-          <p class="section-label">
-            CLASS NOTES <span class="label-en">수업에서 만나는 작은 변화들</span>
-          </p>
 
-          <h2>
-            수업에서 만나는 작은 변화들
-            <span class="en-heading">Small changes that happen through learning.</span>
-          </h2>
-        </div>
+      <p>
 
-        <div class="reviews">
+        수업 전 간단한 상담을 통해 현재 레벨과 목표를 확인하고
+        가장 알맞은 방향을 함께 정합니다.
 
-          <blockquote>
-            “예전에는 그냥 외웠는데, 이제는 이해하면서 말하게 됐어요.”
-            <span class="review-en">
-              “I used to just memorize phrases, but now I understand them and can actually use them.”
+        <span class="en-copy">
+          We first check your level and goals,
+          then choose the best learning direction together.
+        </span>
+
+      </p>
+
+    </div>
+
+
+    <div class="classes">
+
+
+      <a class="class-card" href="#contact">
+
+        <p class="class-index">
+          01
+        </p>
+
+        <h3>
+          1:1 맞춤 수업
+        </h3>
+
+        <p class="class-en-title">
+          1:1 Personalized Korean Class
+        </p>
+
+        <p class="class-time">
+
+          50분 · 레벨 맞춤형 집중 수업
+
+          <br>
+
+          50 min · Personalized to your level and goals
+
+        </p>
+
+        <p class="class-desc">
+
+          문법, 말하기, 듣기, 쓰기를 목표에 맞춰 균형 있게 다룹니다.
+          내 속도로 차근차근 실력을 쌓고 싶은 분께 추천해요.
+
+          <span class="en">
+            A personalized 50-minute lesson covering grammar,
+            speaking, listening, and writing according to your goals.
+            Perfect if you want to build your Korean step by step at your own pace.
+          </span>
+
+        </p>
+
+        <span class="card-bottom">
+
+          <span>
+
+            수업 상담하기
+
+            <span class="en">
+              Ask about this class
             </span>
-            <footer>1:1 수업 수강생 · 1:1 Student</footer>
-          </blockquote>
 
-          <blockquote>
-            “25분이 짧을 줄 알았는데, 매주 꾸준히 말할 수 있어서 좋아요.”
-            <span class="review-en">
-              “I thought 25 minutes would be too short, but I love being able to practice speaking Korean every week.”
+          </span>
+
+          <span class="arrow">
+            →
+          </span>
+
+        </span>
+
+      </a>
+
+
+      <a class="class-card" href="#contact">
+
+        <p class="class-index">
+          02
+        </p>
+
+        <h3>
+          25분 말해한글
+        </h3>
+
+        <p class="class-en-title">
+          25-min Korean Speaking Practice
+        </p>
+
+        <p class="class-time">
+
+          25분 · 주제별 실전 말하기
+
+          <br>
+
+          25 min · Topic-based speaking practice
+
+        </p>
+
+        <p class="class-desc">
+
+          짧고 자주 말하며 한국어 감각을 키우는 대화 중심 수업입니다.
+          배운 표현을 실제 상황처럼 바로 연습해요.
+
+          <span class="en">
+            A short, conversation-focused lesson designed to build Korean speaking confidence
+            through frequent practice and realistic situations.
+          </span>
+
+        </p>
+
+        <span class="card-bottom">
+
+          <span>
+
+            수업 상담하기
+
+            <span class="en">
+              Ask about this class
             </span>
-            <footer>말해한글 수강생 · Korean Speaking Student</footer>
-          </blockquote>
 
-          <blockquote>
-            “실수할까 봐 망설였는데, 이제는 일단 말하는 자신감이 생겼어요.”
-            <span class="review-en">
-              “I used to fear mistakes, but now I’m confident enough to speak.”
-            </span>
-            <footer>1:1 수업 수강생 · 1:1 Student</footer>
-          </blockquote>
+          </span>
 
-        </div>
-      </div>
-    </section>
+          <span class="arrow">
+            →
+          </span>
 
-    <section id="contact" class="contact">
-      <div class="wrap">
-        <p class="section-label">LET'S TALK <span class="label-en">수업 문의</span></p>
+        </span>
 
-        <h2>
-          한국어를 더 편하게<br>말하고 싶다면.
-        </h2>
+      </a>
 
-        <p class="contact-en">
-          Want to speak Korean more comfortably?
+
+    </div>
+
+  </div>
+
+</section>
+
+
+<!-- HOW IT WORKS -->
+
+<section class="flow">
+
+  <div class="wrap">
+
+    <p class="section-label">
+
+      HOW IT WORKS
+
+      <span class="label-en">
+        수업 시작 방법
+      </span>
+
+    </p>
+
+
+    <h2>
+
+      부담 없이 상담하고,<br>
+      나에게 맞게 시작해요.
+
+      <span class="en-heading">
+        Talk with us first. Then start at your own pace.
+      </span>
+
+    </h2>
+
+
+    <div class="steps">
+
+
+      <div class="step">
+
+        <span class="number">
+          01
+        </span>
+
+        <h3>
+          카카오톡 상담
+        </h3>
+
+        <p class="step-en">
+          KakaoTalk Consultation
         </p>
 
         <p>
-          먼저 카카오톡으로 편하게 상담해 주세요.<br>
-          수업이 정해지면 신청서를 안내해 드립니다.
+
+          궁금한 점과 학습 목표를 편하게 들려주세요.
+          수업 방식과 가능한 시간을 안내합니다.
+
           <span class="en">
-            Feel free to contact us on KakaoTalk first.
-            Once your class is confirmed, we will send you the registration form.
+            Tell us about your goals and questions.
+            We will explain the class options and available times.
           </span>
+
         </p>
 
-        <button class="button primary" data-kakao>
-          카카오톡으로 수업 상담하기 · Contact Us
-        </button>
-
-        <div class="button-row secondary">
-          <a class="button" href="https://docs.google.com/forms/d/1k01R-bmoGL4NOIPsnwgy-sFB3lmlQijR-0NrEoJOe9Y/viewform" target="_blank" rel="noopener">
-            신청서 바로 작성하기 · Registration Form
-          </a>
-        </div>
-
-        <p class="contact-note">
-          상담 후, 수업 확정 단계에서
-          <a href="https://docs.google.com/forms/d/1k01R-bmoGL4NOIPsnwgy-sFB3lmlQijR-0NrEoJOe9Y/viewform" target="_blank" rel="noopener">구글폼 신청서</a>를 보내드립니다.
-          <br>
-          <span class="en">A Google Form will be sent after your class is confirmed.</span>
-        </p>
       </div>
-    </section>
 
-  </main>
 
-  <footer class="site-footer">
-    <div class="wrap">
-      <div class="footer-top">
-        <span>서한글랩 · SEO HANGEUL LAB</span>
-        <span class="footer-links">
-          <a href="info.html">이용 안내 · Information</a>
-          <a href="privacy.html">개인정보처리방침 · Privacy</a>
+      <div class="step">
+
+        <span class="number">
+          02
         </span>
+
+        <h3>
+          수업 방향 정하기
+        </h3>
+
+        <p class="step-en">
+          Choose Your Learning Direction
+        </p>
+
+        <p>
+
+          현재 레벨과 목표를 바탕으로
+          수업 종류와 학습 방향을 함께 정합니다.
+
+          <span class="en">
+            Based on your level and goals,
+            we decide which class and learning direction are right for you.
+          </span>
+
+        </p>
+
       </div>
+
+
+      <div class="step">
+
+        <span class="number">
+          03
+        </span>
+
+        <h3>
+
+          <a href="https://docs.google.com/forms/d/1k01R-bmoGL4NOIPsnwgy-sFB3lmlQijR-0NrEoJOe9Y/viewform"
+             target="_blank"
+             rel="noopener">
+
+            신청서 작성
+
+          </a>
+
+        </h3>
+
+        <p class="step-en">
+          Complete the Registration Form
+        </p>
+
+        <p>
+
+          수업을 진행하기로 결정했다면
+          간단한 구글폼으로 정보를 남겨주세요.
+
+          <span class="en">
+            Once you decide to join,
+            simply complete a short Google Form to register.
+          </span>
+
+        </p>
+
+      </div>
+
+
+    </div>
+
+  </div>
+
+</section>
+
+
+<!-- REVIEWS -->
+
+<section id="reviews">
+
+  <div class="wrap">
+
+    <div class="review-title">
+
+      <p class="section-label">
+
+        CLASS NOTES
+
+        <span class="label-en">
+          수업에서 만나는 작은 변화들
+        </span>
+
+      </p>
+
+
+      <h2>
+
+        수업에서 만나는 작은 변화들
+
+        <span class="en-heading">
+          Small changes that happen through learning.
+        </span>
+
+      </h2>
+
+    </div>
+
+
+    <div class="reviews">
+
+
+      <blockquote>
+
+        “예전에는 그냥 외웠는데,
+        이제는 이해하면서 말하게 됐어요.”
+
+        <span class="review-en">
+          “I used to just memorize phrases,
+          but now I understand them and can actually use them.”
+        </span>
+
+        <footer>
+          1:1 수업 수강생 · 1:1 Student
+        </footer>
+
+      </blockquote>
+
+
+      <blockquote>
+
+        “25분이 짧을 줄 알았는데,
+        매주 꾸준히 말할 수 있어서 좋아요.”
+
+        <span class="review-en">
+          “I thought 25 minutes would be too short,
+          but I love being able to practice speaking Korean every week.”
+        </span>
+
+        <footer>
+          말해한글 수강생 · Korean Speaking Student
+        </footer>
+
+      </blockquote>
+
+
+      <blockquote>
+
+        “실수할까 봐 망설였는데,
+        이제는 일단 말하는 자신감이 생겼어요.”
+
+        <span class="review-en">
+          “I used to fear mistakes,
+          but now I’m confident enough to speak.”
+        </span>
+
+        <footer>
+          1:1 수업 수강생 · 1:1 Student
+        </footer>
+
+      </blockquote>
+
+
+    </div>
+
+  </div>
+
+</section>
+
+
+<!-- ========================= -->
+<!-- MY LEARNING -->
+<!-- ========================= -->
+
+<section id="learning" class="learning-section">
+
+  <div class="wrap">
+
+    <div class="learning-head">
 
       <div>
-        대표자 서주형 · 경기도 과천시<br>
-        © 2026 SEO HANGEUL LAB. All rights reserved.
+
+        <p class="section-label">
+
+          MY LEARNING
+
+          <span class="label-en">
+            나의 학습 기록
+          </span>
+
+        </p>
+
+        <h2>
+
+          내가 배운 것을<br>
+          기록해 보세요.
+
+          <span class="en-heading">
+            Keep track of what you learn.
+          </span>
+
+        </h2>
+
       </div>
+
+
+      <div class="learning-intro">
+
+        수업에서 배운 표현과 복습할 내용을
+        직접 기록하고 관리할 수 있습니다.
+
+        <span class="en">
+          Save the expressions and notes you want to review after each lesson.
+        </span>
+
+      </div>
+
     </div>
-  </footer>
 
-  <div class="modal" id="contact-modal" role="dialog" aria-modal="true" aria-labelledby="modal-title">
-    <div class="modal-panel">
-      <button class="modal-close" aria-label="닫기">×</button>
 
-      <p class="section-label">KAKAO TALK</p>
+    <!-- 기록이 없을 때 -->
 
-      <h3 id="modal-title">
-        카카오톡 상담 링크를<br>연결해 주세요.
+    <div id="learning-empty" class="learning-empty">
+
+      <h3>
+        아직 학습 기록이 없어요.
       </h3>
 
       <p>
-        아래 코드의 <b>KAKAO_URL</b>에 카카오톡 채널 또는 오픈채팅 링크를 붙여 넣으면,
-        이 버튼이 바로 상담창으로 연결됩니다.
-        <br><br>
-        Paste your KakaoTalk channel or open-chat link into <b>KAKAO_URL</b> in the code below.
+        첫 번째 학습 기록을 만들어 보세요.
+        <br>
+        Create your first learning note.
       </p>
 
-      <button class="button" onclick="document.getElementById('contact-modal').classList.remove('open')">
-        확인했어요 · Got it
+      <button
+        type="button"
+        class="button primary"
+        id="add-learning-empty">
+
+        + 학습기록 추가
+
       </button>
+
     </div>
+
+
+    <!-- 기록이 생기면 여기에 표시 -->
+
+    <div
+      id="learning-list"
+      class="learning-list"
+      style="display:none;">
+
+    </div>
+
+
+    <div
+      id="learning-add-bottom"
+      style="display:none; margin-top:20px;">
+
+      <button
+        type="button"
+        class="button primary"
+        id="add-learning">
+
+        + 학습기록 추가
+
+      </button>
+
+    </div>
+
+
   </div>
 
-  <script>
-    // 실제 카카오톡 채널 또는 오픈채팅 링크를 따옴표 안에 붙여 넣으세요.
-    // Paste your actual KakaoTalk channel or open-chat link between the quotes.
-    const KAKAO_URL = 'https://open.kakao.com/o/sijckPIi';
+</section>
 
-    document.querySelectorAll('[data-kakao]').forEach(button => {
-      button.addEventListener('click', () => {
-        if (KAKAO_URL) {
-          window.open(KAKAO_URL, '_blank', 'noopener');
-        } else {
-          document.getElementById('contact-modal').classList.add('open');
-        }
-      });
-    });
 
-    document.querySelector('.modal-close').addEventListener('click', () => {
-      document.getElementById('contact-modal').classList.remove('open');
-    });
+<!-- CONTACT -->
 
-    document.getElementById('contact-modal').addEventListener('click', event => {
-      if (event.target.id === 'contact-modal') {
-        event.currentTarget.classList.remove('open');
-      }
-    });
-  </script>
-  <script>
-  if ('serviceWorker' in navigator) {
-    window.addEventListener('load', function () {
-      navigator.serviceWorker.register('./sw.js')
-        .then(function () {
-          console.log('SEO HANGEUL LAB PWA ready');
-        })
-        .catch(function (error) {
-          console.error('PWA registration failed:', error);
-        });
-    });
+<section id="contact" class="contact">
+
+  <div class="wrap">
+
+    <p class="section-label">
+      LET'S TALK
+      <span class="label-en">수업 문의</span>
+    </p>
+
+
+    <h2>
+
+      한국어를 더 편하게<br>
+      말하고 싶다면.
+
+    </h2>
+
+
+    <p class="contact-en">
+      Want to speak Korean more comfortably?
+    </p>
+
+
+    <p>
+
+      먼저 카카오톡으로 편하게 상담해 주세요.<br>
+      수업이 정해지면 신청서를 안내해 드립니다.
+
+      <span class="en">
+        Feel free to contact us on KakaoTalk first.
+        Once your class is confirmed, we will send you the registration form.
+      </span>
+
+    </p>
+
+
+    <button
+      class="button primary"
+      data-kakao>
+
+      카카오톡으로 수업 상담하기 · Contact Us
+
+    </button>
+
+
+    <div class="button-row secondary">
+
+      <a
+        class="button"
+        href="https://docs.google.com/forms/d/1k01R-bmoGL4NOIPsnwgy-sFB3lmlQijR-0NrEoJOe9Y/viewform"
+        target="_blank"
+        rel="noopener">
+
+        신청서 바로 작성하기 · Registration Form
+
+      </a>
+
+    </div>
+
+
+    <p class="contact-note">
+
+      상담 후, 수업 확정 단계에서
+
+      <a
+        href="https://docs.google.com/forms/d/1k01R-bmoGL4NOIPsnwgy-sFB3lmlQijR-0NrEoJOe9Y/viewform"
+        target="_blank"
+        rel="noopener">
+
+        구글폼 신청서
+
+      </a>
+
+      를 보내드립니다.
+
+      <br>
+
+      <span class="en">
+        A Google Form will be sent after your class is confirmed.
+      </span>
+
+    </p>
+
+  </div>
+
+</section>
+
+
+</main>
+
+
+<!-- FOOTER -->
+
+<footer class="site-footer">
+
+  <div class="wrap">
+
+    <div class="footer-top">
+
+      <span>
+        서한글랩 · SEO HANGEUL LAB
+      </span>
+
+      <span class="footer-links">
+
+        <a href="info.html">
+          이용 안내 · Information
+        </a>
+
+        <a href="privacy.html">
+          개인정보처리방침 · Privacy
+        </a>
+
+      </span>
+
+    </div>
+
+
+    <div>
+
+      대표자 서주형 · 경기도 과천시
+
+      <br>
+
+      © 2026 SEO HANGEUL LAB. All rights reserved.
+
+    </div>
+
+  </div>
+
+</footer>
+
+
+<!-- ========================= -->
+<!-- CONTACT MODAL -->
+<!-- ========================= -->
+
+<div
+  class="modal"
+  id="contact-modal"
+  role="dialog"
+  aria-modal="true"
+  aria-labelledby="modal-title">
+
+  <div class="modal-panel">
+
+    <button
+      class="modal-close"
+      aria-label="닫기">
+
+      ×
+
+    </button>
+
+
+    <p class="section-label">
+      KAKAO TALK
+    </p>
+
+
+    <h3 id="modal-title">
+
+      카카오톡 상담 링크를<br>
+      연결해 주세요.
+
+    </h3>
+
+
+    <p>
+
+      아래 코드의 <b>KAKAO_URL</b>에
+      카카오톡 채널 또는 오픈채팅 링크를 붙여 넣으면,
+      이 버튼이 바로 상담창으로 연결됩니다.
+
+      <br><br>
+
+      Paste your KakaoTalk channel or open-chat link into
+      <b>KAKAO_URL</b> in the code below.
+
+    </p>
+
+
+    <button
+      class="button"
+      onclick="document.getElementById('contact-modal').classList.remove('open')">
+
+      확인했어요 · Got it
+
+    </button>
+
+  </div>
+
+</div>
+
+
+<!-- ========================= -->
+<!-- LEARNING RECORD MODAL -->
+<!-- ========================= -->
+
+<div
+  class="learning-modal"
+  id="learning-modal"
+  role="dialog"
+  aria-modal="true"
+  aria-labelledby="learning-modal-title">
+
+  <div class="learning-panel">
+
+    <button
+      class="learning-close"
+      id="learning-close"
+      aria-label="닫기">
+
+      ×
+
+    </button>
+
+
+    <p class="section-label">
+      MY LEARNING
+    </p>
+
+
+    <h3 id="learning-modal-title">
+      학습기록 추가
+    </h3>
+
+
+    <p class="modal-subtitle">
+      My Learning Note
+    </p>
+
+
+    <form id="learning-form">
+
+      <input
+        type="hidden"
+        id="learning-id">
+
+
+      <div class="form-group">
+
+        <label for="learning-date">
+          수업 날짜 · Lesson Date
+        </label>
+
+        <input
+          type="date"
+          id="learning-date"
+          required>
+
+      </div>
+
+
+      <div class="form-group">
+
+        <label for="learning-title">
+          수업 주제 · Lesson Topic
+        </label>
+
+        <input
+          type="text"
+          id="learning-title"
+          placeholder="예: 카페에서 주문하기"
+          required>
+
+      </div>
+
+
+      <div class="form-group">
+
+        <label for="learning-content">
+          오늘 배운 내용 · What I Learned
+        </label>
+
+        <textarea
+          id="learning-content"
+          placeholder="오늘 수업에서 배운 내용을 적어보세요."></textarea>
+
+      </div>
+
+
+      <div class="form-group">
+
+        <label for="learning-expressions">
+          복습할 표현 · Expressions to Review
+        </label>
+
+        <textarea
+          id="learning-expressions"
+          placeholder="예: 아이스 아메리카노 한 잔 주세요."></textarea>
+
+      </div>
+
+
+      <div class="form-group">
+
+        <label for="learning-memo">
+          메모 · Personal Note
+        </label>
+
+        <textarea
+          id="learning-memo"
+          placeholder="수업 후 느낀 점이나 다음 수업에서 연습하고 싶은 내용을 적어보세요."></textarea>
+
+      </div>
+
+
+      <div class="learning-form-buttons">
+
+        <button
+          type="button"
+          class="button cancel-button"
+          id="learning-cancel">
+
+          취소
+
+        </button>
+
+
+        <button
+          type="submit"
+          class="button primary">
+
+          저장하기 · Save
+
+        </button>
+
+      </div>
+
+
+    </form>
+
+  </div>
+
+</div>
+
+
+<!-- ========================= -->
+<!-- JAVASCRIPT -->
+<!-- ========================= -->
+
+<script>
+
+/* ==========================================
+   KAKAO TALK
+========================================== */
+
+const KAKAO_URL = 'https://open.kakao.com/o/sijckPIi';
+
+document.querySelectorAll('[data-kakao]').forEach(button => {
+
+  button.addEventListener('click', () => {
+
+    if (KAKAO_URL) {
+
+      window.open(
+        KAKAO_URL,
+        '_blank',
+        'noopener'
+      );
+
+    } else {
+
+      document
+        .getElementById('contact-modal')
+        .classList.add('open');
+
+    }
+
+  });
+
+});
+
+
+document
+  .querySelector('.modal-close')
+  .addEventListener('click', () => {
+
+    document
+      .getElementById('contact-modal')
+      .classList.remove('open');
+
+  });
+
+
+document
+  .getElementById('contact-modal')
+  .addEventListener('click', event => {
+
+    if (event.target.id === 'contact-modal') {
+
+      event.currentTarget
+        .classList.remove('open');
+
+    }
+
+  });
+
+
+/* ==========================================
+   MY LEARNING
+   무료 로컬 저장 기능
+========================================== */
+
+const LEARNING_STORAGE_KEY =
+  'seo-hangeul-lab-learning-records';
+
+
+const learningModal =
+  document.getElementById('learning-modal');
+
+const learningForm =
+  document.getElementById('learning-form');
+
+const learningList =
+  document.getElementById('learning-list');
+
+const learningEmpty =
+  document.getElementById('learning-empty');
+
+const learningAddBottom =
+  document.getElementById('learning-add-bottom');
+
+const learningModalTitle =
+  document.getElementById('learning-modal-title');
+
+
+/* 저장된 기록 불러오기 */
+
+function getLearningRecords() {
+
+  try {
+
+    const saved =
+      localStorage.getItem(
+        LEARNING_STORAGE_KEY
+      );
+
+    return saved
+      ? JSON.parse(saved)
+      : [];
+
+  } catch (error) {
+
+    console.error(
+      '학습 기록을 불러올 수 없습니다.',
+      error
+    );
+
+    return [];
+
   }
+
+}
+
+
+/* 기록 저장 */
+
+function saveLearningRecords(records) {
+
+  localStorage.setItem(
+    LEARNING_STORAGE_KEY,
+    JSON.stringify(records)
+  );
+
+}
+
+
+/* 날짜 표시 */
+
+function formatLearningDate(dateString) {
+
+  if (!dateString) return '';
+
+  const date =
+    new Date(dateString + 'T00:00:00');
+
+  return date.toLocaleDateString(
+    'ko-KR',
+    {
+      year:'numeric',
+      month:'long',
+      day:'numeric'
+    }
+  );
+
+}
+
+
+/* 화면에 기록 표시 */
+
+function renderLearningRecords() {
+
+  const records =
+    getLearningRecords();
+
+  learningList.innerHTML = '';
+
+
+  if (records.length === 0) {
+
+    learningEmpty.style.display =
+      'block';
+
+    learningList.style.display =
+      'none';
+
+    learningAddBottom.style.display =
+      'none';
+
+    return;
+
+  }
+
+
+  learningEmpty.style.display =
+    'none';
+
+  learningList.style.display =
+    'grid';
+
+  learningAddBottom.style.display =
+    'block';
+
+
+  /*
+    최신 기록이 위로 오도록 날짜순 정렬
+  */
+
+  records.sort((a,b) => {
+
+    return (
+      new Date(b.date) -
+      new Date(a.date)
+    );
+
+  });
+
+
+  records.forEach(record => {
+
+    const card =
+      document.createElement('article');
+
+    card.className =
+      'learning-card';
+
+
+    card.innerHTML = `
+
+      <div class="learning-card-top">
+
+        <div>
+
+          <div class="learning-date">
+            ${escapeHtml(
+              formatLearningDate(record.date)
+            )}
+          </div>
+
+          <h3>
+            ${escapeHtml(record.title)}
+          </h3>
+
+        </div>
+
+
+        <div class="learning-actions">
+
+          <button
+            type="button"
+            class="learning-action edit-learning"
+            data-id="${record.id}">
+
+            수정
+
+          </button>
+
+
+          <button
+            type="button"
+            class="learning-action delete-learning"
+            data-id="${record.id}">
+
+            삭제
+
+          </button>
+
+        </div>
+
+      </div>
+
+
+      <div class="learning-content">
+
+
+        ${
+          record.content
+            ? `
+              <div class="learning-item">
+
+                <strong>
+                  오늘 배운 내용
+                </strong>
+
+                <p>
+                  ${escapeHtml(record.content)}
+                </p>
+
+              </div>
+            `
+            : ''
+        }
+
+
+        ${
+          record.expressions
+            ? `
+              <div class="learning-item">
+
+                <strong>
+                  복습할 표현
+                </strong>
+
+                <p>
+                  ${escapeHtml(record.expressions)}
+                </p>
+
+              </div>
+            `
+            : ''
+        }
+
+
+        ${
+          record.memo
+            ? `
+              <div class="learning-item">
+
+                <strong>
+                  메모
+                </strong>
+
+                <p>
+                  ${escapeHtml(record.memo)}
+                </p>
+
+              </div>
+            `
+            : ''
+        }
+
+
+      </div>
+
+    `;
+
+
+    learningList.appendChild(card);
+
+  });
+
+
+  /* 수정 버튼 */
+
+  document
+    .querySelectorAll('.edit-learning')
+    .forEach(button => {
+
+      button.addEventListener(
+        'click',
+        () => {
+
+          openEditLearning(
+            button.dataset.id
+          );
+
+        }
+      );
+
+    });
+
+
+  /* 삭제 버튼 */
+
+  document
+    .querySelectorAll('.delete-learning')
+    .forEach(button => {
+
+      button.addEventListener(
+        'click',
+        () => {
+
+          deleteLearning(
+            button.dataset.id
+          );
+
+        }
+      );
+
+    });
+
+}
+
+
+/* HTML 문자 안전하게 표시 */
+
+function escapeHtml(value) {
+
+  if (!value) return '';
+
+  return String(value)
+    .replace(/&/g, '&amp;')
+    .replace(/</g, '&lt;')
+    .replace(/>/g, '&gt;')
+    .replace(/"/g, '&quot;')
+    .replace(/'/g, '&#039;');
+
+}
+
+
+/* 새 기록 모달 열기 */
+
+function openNewLearning() {
+
+  learningForm.reset();
+
+  document.getElementById(
+    'learning-id'
+  ).value = '';
+
+
+  /*
+    오늘 날짜 자동 입력
+  */
+
+  const today =
+    new Date();
+
+  const localDate =
+    today.toLocaleDateString(
+      'en-CA'
+    );
+
+  document.getElementById(
+    'learning-date'
+  ).value = localDate;
+
+
+  learningModalTitle.textContent =
+    '학습기록 추가';
+
+
+  learningModal.classList.add(
+    'open'
+  );
+
+}
+
+
+/* 기존 기록 수정 */
+
+function openEditLearning(id) {
+
+  const records =
+    getLearningRecords();
+
+  const record =
+    records.find(
+      item => String(item.id) === String(id)
+    );
+
+
+  if (!record) return;
+
+
+  document.getElementById(
+    'learning-id'
+  ).value = record.id;
+
+
+  document.getElementById(
+    'learning-date'
+  ).value = record.date || '';
+
+
+  document.getElementById(
+    'learning-title'
+  ).value = record.title || '';
+
+
+  document.getElementById(
+    'learning-content'
+  ).value = record.content || '';
+
+
+  document.getElementById(
+    'learning-expressions'
+  ).value =
+    record.expressions || '';
+
+
+  document.getElementById(
+    'learning-memo'
+  ).value = record.memo || '';
+
+
+  learningModalTitle.textContent =
+    '학습기록 수정';
+
+
+  learningModal.classList.add(
+    'open'
+  );
+
+}
+
+
+/* 모달 닫기 */
+
+function closeLearningModal() {
+
+  learningModal.classList.remove(
+    'open'
+  );
+
+}
+
+
+/* 기록 삭제 */
+
+function deleteLearning(id) {
+
+  const confirmed =
+    confirm(
+      '이 학습기록을 삭제할까요?\n삭제하면 복구할 수 없습니다.'
+    );
+
+
+  if (!confirmed) return;
+
+
+  const records =
+    getLearningRecords();
+
+
+  const filtered =
+    records.filter(
+      record =>
+        String(record.id) !== String(id)
+    );
+
+
+  saveLearningRecords(
+    filtered
+  );
+
+
+  renderLearningRecords();
+
+}
+
+
+/* 저장 버튼 */
+
+learningForm.addEventListener(
+  'submit',
+  event => {
+
+    event.preventDefault();
+
+
+    const id =
+      document.getElementById(
+        'learning-id'
+      ).value;
+
+
+    const record = {
+
+      id:
+        id ||
+        Date.now().toString(),
+
+      date:
+        document.getElementById(
+          'learning-date'
+        ).value,
+
+      title:
+        document.getElementById(
+          'learning-title'
+        ).value.trim(),
+
+      content:
+        document.getElementById(
+          'learning-content'
+        ).value.trim(),
+
+      expressions:
+        document.getElementById(
+          'learning-expressions'
+        ).value.trim(),
+
+      memo:
+        document.getElementById(
+          'learning-memo'
+        ).value.trim()
+
+    };
+
+
+    let records =
+      getLearningRecords();
+
+
+    /*
+      기존 기록 수정
+    */
+
+    if (id) {
+
+      records =
+        records.map(
+          item =>
+            String(item.id) === String(id)
+              ? record
+              : item
+        );
+
+    }
+
+    /*
+      새 기록 추가
+    */
+
+    else {
+
+      records.push(record);
+
+    }
+
+
+    saveLearningRecords(
+      records
+    );
+
+
+    closeLearningModal();
+
+    renderLearningRecords();
+
+  }
+);
+
+
+/* 추가 버튼 */
+
+document
+  .getElementById('add-learning-empty')
+  .addEventListener(
+    'click',
+    openNewLearning
+  );
+
+
+document
+  .getElementById('add-learning')
+  .addEventListener(
+    'click',
+    openNewLearning
+  );
+
+
+/* 취소 */
+
+document
+  .getElementById('learning-cancel')
+  .addEventListener(
+    'click',
+    closeLearningModal
+  );
+
+
+/* X 버튼 */
+
+document
+  .getElementById('learning-close')
+  .addEventListener(
+    'click',
+    closeLearningModal
+  );
+
+
+/* 모달 바깥 클릭 */
+
+learningModal.addEventListener(
+  'click',
+  event => {
+
+    if (
+      event.target === learningModal
+    ) {
+
+      closeLearningModal();
+
+    }
+
+  }
+);
+
+
+/* ESC 키 */
+
+document.addEventListener(
+  'keydown',
+  event => {
+
+    if (event.key === 'Escape') {
+
+      closeLearningModal();
+
+    }
+
+  }
+);
+
+
+/* 페이지가 열릴 때 기록 표시 */
+
+renderLearningRecords();
+
+
+/* ==========================================
+   PWA SERVICE WORKER
+========================================== */
+
+if ('serviceWorker' in navigator) {
+
+  window.addEventListener(
+    'load',
+    function () {
+
+      navigator.serviceWorker
+        .register('./sw.js')
+
+        .then(function () {
+
+          console.log(
+            'SEO HANGEUL LAB PWA ready'
+          );
+
+        })
+
+        .catch(function (error) {
+
+          console.error(
+            'PWA registration failed:',
+            error
+          );
+
+        });
+
+    }
+  );
+
+}
+
 </script>
+
 </body>
+
 </html>
