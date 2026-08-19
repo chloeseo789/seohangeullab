@@ -1,10 +1,12 @@
-const CACHE_NAME = 'seo-hangeul-lab-v1';
+const CACHE_NAME = 'seo-hangeul-lab-v2';
 
 const FILES_TO_CACHE = [
   './',
   './index.html',
   './manifest.json',
-  './호.png'
+  './호.png',
+  './info.html',
+  './privacy.html'
 ];
 
 self.addEventListener('install', event => {
@@ -23,20 +25,16 @@ self.addEventListener('activate', event => {
           .filter(key => key !== CACHE_NAME)
           .map(key => caches.delete(key))
       )
-    )
+    ).then(() => self.clients.claim())
   );
-
-  self.clients.claim();
 });
 
 self.addEventListener('fetch', event => {
-
   if (event.request.method !== 'GET') return;
 
   event.respondWith(
     fetch(event.request)
       .then(response => {
-
         const copy = response.clone();
 
         caches.open(CACHE_NAME)
@@ -45,11 +43,12 @@ self.addEventListener('fetch', event => {
           });
 
         return response;
-
       })
       .catch(() => {
-        return caches.match(event.request);
+        return caches.match(event.request)
+          .then(cachedResponse => {
+            return cachedResponse || caches.match('./index.html');
+          });
       })
   );
-
 });
